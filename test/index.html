@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+    .btn {
+      display: block;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-error {
+      background-color: #f56565;
+      color: white;
+    }
+
+    .btn:hover {
+      background-color: #e53e3e;
+      transform: scale(1.05);
+    }
+
+    .carousel-item {
+      display: none;
+    }
+
+    .carousel-item.active {
+      display: block;
+    }
+  </style> -->
+
+</head>
+<body class="bg-gray-20">
+
+<!-- nav bar -->
+<div class="navbar bg-pink-200">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-pink-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+      
+        <li><a>Home</a></li>
+        <li><a>About us</a></li>
+        <li><a>Contact us</a></li>
+        <li><a>Blogs</a></li>
+        <li><a>Gallery</a></li>
+      
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl">vidr</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+      <li><a>About us</a></li>
+      <li><a>Contact us</a></li>
+      <li><a>Blogs</a></li>
+      <li><a>Gallery</a></li>
+    
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn btn-error mr-3">Get Free Estimate</a>
+  </div>
+</div>
+<!-- nav bar -->
+ 
+
+
+<!-- 
+<div class="container md:mx-auto md:grid md:max-h-screen md:min-w-fit md:grid-cols-12 md:grid-rows-12 md:bg-gradient-to-r md:from-pink-100 md:to-pink-200">
+  <div class="col-span-8 col-start-1 row-span-8 row-start-3 bg-pink-200">
+    <div class="p-8 mx-auto my-auto overflow-hidden">
+      <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="" class="h-full w-full object-cover" />
+    </div>
+  </div>
+
+  <div class="col-span-4 col-start-9 row-span-10 row-start-2 rounded-lg border border-gray-100 bg-pink-400 bg-opacity-30 bg-clip-padding backdrop-blur-3xl backdrop-filter overflow-y-auto">
+    <div class="mx-auto p-10 text-left">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Elegant Home Interiors</h1>
+      <h2 class="mb-6 text-2xl text-gray-600">Work with the best designers in Bangalore</h2>
+      <p class="mx-auto max-w-2xl text-lg text-gray-700">Transform your space with Elegant Interiors. We create bespoke, luxurious designs that reflect your unique taste. Our expert team ensures your home or office is both beautiful and functional.</p>
+      <button class="btn btn-wide btn-error mt-6">Neutral</button>
+    </div>
+  </div>
+
+  <div class="flex gap-4 col-start-1 row-start-12 col-span-3 mx-10 mt-4">
+    <button class="btn hover:btn-error btn-outline">Sketch</button>
+    <button class="btn hover:btn-error btn-outline">3D Design</button>
+    <button class="btn hover:btn-error btn-outline">Render</button>
+  </div>
+</div> -->
+
+<!-- hero section -->
+<div class="container mx-auto grid min-h-screen md:max-h-screen min-w-fit grid-cols-12 grid-rows-12 bg-gradient-to-r from-pink-100 to-pink-200">
+  <div class="col-span-12 md:col-span-8 row-span-6 md:row-span-8 bg-pink-200">
+    <div class="p-8 mx-auto my-auto overflow-hidden h-full">
+      <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Elegant interior design example" class="h-full w-full object-cover" />
+    </div>
+  
+  </div>
+
+
+  <div class="col-span-12 md:mr-5 md:col-span-4 row-span-6 md:row-span-10 rounded-lg border border-gray-100 bg-pink-400 bg-opacity-30 bg-clip-padding backdrop-blur-3xl backdrop-filter overflow-y-auto">
+    <div class="mx-auto p-10 text-left">
+      <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Welcome to Elegant Home Interiors</h1>
+      <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Work with the best designers in Bangalore</h2>
+      <p class="text-md md:text-lg text-gray-700 max-w-2xl mx-auto">Transform your space with Elegant Interiors. We create bespoke, luxurious designs that reflect your unique taste. Our expert team ensures your home or office is both beautiful and functional.</p>
+      <button class="btn btn-wide btn-error mt-6">Neutral</button>
+    </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-4 col-span-12 md:col-span-3 row-span-1 mx-10 mt-4 ">
+    <button class="btn hover:btn-error btn-outline">Sketch</button>
+    <button class="btn hover:btn-error btn-outline">3D Design</button>
+    <button class="btn hover:btn-error btn-outline">Render</button>
+  </div>
+</div> 
+<!--  herosection end -->
+
+
+
+<!-- features section -->
+
+<div class="container mx-auto max-h-screen max-w-6xl bg-pink-300 sm:grid sm:grid-cols-12 sm:grid-rows-12" style="height: 100vh;">
+  <div class="bg-pink-300 sm:col-span-4 sm:row-span-10 sm:row-start-2 sm:mx-2 sm:grid sm:grid-cols-1 sm:grid-rows-3 sm:rounded-3xl sm:gap-2 p-4">
+    <div class="bg-pink-100 sm:flex sm:flex-col items-center place-content-center rounded-3xl sm:gap-4 h-full">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="#1C274C"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"></path>
+      </svg>
+      <div class="items-center text-center">
+        <p class="text-nowrap font-bold">warranty</p>
+        <p class="text-xs text-wrap">We are using cookies for no reason.</p>
+      </div>
+    </div>
+    <div class="bg-pink-100 sm:flex sm:flex-col items-center place-content-center rounded-3xl h-full sm:gap-4">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="#1C274C"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"></path>
+      </svg>
+      <div class="items-center text-center">
+        <p class="text-nowrap font-bold">warranty</p>
+        <p class="text-xs text-wrap">We are using cookies for no reason.</p>
+      </div>
+    </div>
+    <div class="bg-pink-100 sm:flex sm:flex-col items-center place-content-center rounded-3xl h-full sm:gap-4">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="#1C274C"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"></path>
+      </svg>
+      <div class="items-center text-center">
+        <p class="text-nowrap font-bold">warranty</p>
+        <p class="text-xs text-wrap">We are using cookies for no reason.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- centre -->
+  <div class="bg-pink-30 sm:col-span-4 sm:row-span-10 sm:row-start-2 sm:mx-2 sm:rounded-sm h-full ">
+    <div class="card glass bg-pink-300 w-fit h-full my-auto m-auto ">
+      <!-- <figure>
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          alt="car!" />
+      </figure> -->
+      <div class="card-body h-fit">
+        <h2 class="card-title">Life hack</h2>
+        <p>How to park your car at your garage?</p>
+        <div class="card-actions justify-center ">
+          <button class="btn btn-md btn-primary">Learn now!</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  
+  <!-- centre -->
+
+<!--  -->
+    <div class="bg-pink-300 sm:col-span-4 sm:row-span-10 sm:row-start-2 sm:mx-2 sm:grid sm:grid-cols-1 sm:grid-rows-3 sm:rounded-3xl sm:gap-2 p-4">
+      <div class="bg-pink-100 sm:flex sm:flex-col items-center place-content-center rounded-3xl sm:gap-4 h-full">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="#1C274C"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"></path>
+        </svg>
+        <div class="items-center text-center">
+          <p class="text-nowrap font-bold">warranty</p>
+          <p class="text-xs text-wrap">We are using cookies for no reason.</p>
+        </div>
+      </div>
+      <div class="bg-pink-100 sm:flex sm:flex-col items-center place-content-center rounded-3xl h-full sm:gap-4">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="#1C274C"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"></path>
+        </svg>
+        <div class="items-center text-center">
+          <p class="text-nowrap font-bold">warranty</p>
+          <p class="text-xs text-wrap">We are using cookies for no reason.</p>
+        </div>
+      </div>
+      <div class="bg-pink-100 sm:flex sm:flex-col items-center place-content-center rounded-3xl h-full sm:gap-4">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="#1C274C"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"></path>
+        </svg>
+        <div class="items-center text-center">
+          <p class="text-nowrap font-bold">warranty</p>
+          <p class="text-xs text-wrap">We are using cookies for no reason.</p>
+        </div>
+      </div>
+    </div>
+      
+  
+</div>
+
+</section>
+
+<!-- features section end -->
+
+
+<!-- services  -->
+
+<div class="container mx-auto min-h-screen max-w-6xl bg-pink-300 p-4 sm:grid sm:grid-cols-3 sm:grid-rows-3 sm:gap-2" style="height: 100vh;">
+  <div class="one mb bg-pink-20">
+    <div class="card glass bg-base-100 image-full h-full w-fit">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="min-h-full w-full" />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center">BEDROOM</h2>
+        <p class="whitespace-pre-line text-center text-xs">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="two bg-pink-20 h-full">
+    <div class="card glass bg-base-100 image-full h-full w-fit">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="min-h-full w-full" />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center">BATHROOM</h2>
+        <p class="whitespace-pre-line text-center text-xs">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="three bg-pink-20 h-full">
+    <div class="card glass bg-base-100 image-full h-full w-fit">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="min-h-full w-full" />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center">LIVING</h2>
+        <p class="whitespace-pre-line text-center text-xs">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="four bg-pink-20 sm:col-span-2">
+    <div class="card glass bg-base-100 image-full h-full">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="min-h-full min-w-full" />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center">KITCHEN</h2>
+        <p class="whitespace-pre-line text-center text-xs">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="five bg-pink-20">
+    <div class="card glass bg-base-100 image-full h-full w-fit">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="min-h-full w-full" />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center">FOYR</h2>
+        <p class="whitespace-pre-line text-center text-xs">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="six bg-pink-20">
+    <div class="card glass bg-base-100 image-full h-full w-fit">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="min-h-full w-full" />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center">DINING</h2>
+        <p class="whitespace-pre-line text-center text-xs">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="seven group bg-pink-20 sm:col-span-2">
+    <div class="card glass bg-base-100 image-full h-full">
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="Shoes" class="h-full w-full transform transition-transform duration-500 group-hover:scale-110 " />
+      </figure>
+      <div class="card-body card-compact">
+        <h2 class="card-title justify-center group-hover:text-pink-600">CIVIL WORKS</h2>
+        <p class="whitespace-pre-line text-center text-xs group-hover:text-pink-600">If a dog lorem ipsum shoes whose shoechoose If a dog lorem ipsum shoes whose</p>
+        <!-- <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--services end  -->
+
+
+<!-- process -->
+   
+ 
+
+<div id="processSection" class=" container mx-auto min-h-screen max-w-6xl bg-pink-300 p-4" style="height: 100vh;">
+  <div class="h-full gap-1 bg-red-200 p-4 sm:grid sm:grid-cols-5 sm:grid-rows-12 sm:max-w-2xl mx-auto">
+   
+     <a id="link1" href="#item1" class="btn sm:row-span-1 btn-error text-center hover:rounded-t-full sm:rounded-lg">1</a>
+     <a id="link2" href="#item2" class="btn sm:row-span-1 btn-error text-center hover:rounded-t-full sm:rounded-lg">2</a>
+     <a id="link3" href="#item3" class="btn sm:row-span-1 btn-error text-center hover:rounded-t-full sm:rounded-lg">3</a>
+     <a id="link4" href="#item4" class="btn sm:row-span-1 btn-error text-center hover:rounded-t-full sm:rounded-lg">4</a>
+     <a id="link5" href="#item5" class="btn sm:row-span-1 btn-error text-center hover:rounded-t-full sm:rounded-lg">5</a>
+
+
+    <div class="bg-red-200 sm:col-span-5 sm:row-span-10 sm:row-start-2 mt-3  sm:rounded-md">
+
+     <div id="carouselBox" class="carousel box w-full h-full">
+       <div id="item1" class="carousel-item w-full">
+    
+          <div class="card bg-base-100 w-full shadow-xl">
+            <div class="card-body  bg-pink-300">
+              <h2 class="card-title">STEP1</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+            <figure>
+              <img
+                src="https://picsum.photos/600/300"
+                alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+
+
+
+       
+        <div id="item2" class="carousel-item w-full">
+          <div class="card bg-base-100 w-full shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">STEP2</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+            <figure>
+              <img
+                src="https://picsum.photos/600/300"
+                alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+
+
+        <div id="item3" class="carousel-item w-full">
+          <div class="card bg-base-100 w-full shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">STEP3</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+            <figure>
+              <img
+                src="https://picsum.photos/600/300"
+                alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+
+
+        <div id="item4" class="carousel-item w-full">
+          <div class="card bg-base-100 w-full shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">STEP4</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+            <figure>
+              <img
+                src="https://picsum.photos/600/300"
+                alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+
+
+        <div id="item5" class="carousel-item w-full">
+          <div class="card bg-base-100 w-full shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">STEP5</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+            <figure>
+              <img
+                src="https://picsum.photos/600/300"
+                alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- </div> -->
+
+<!-- process end -->
+
+
+<!-- testimonials -->
+
+<!-- testimonial end -->
+
+
+
+<!-- pricing -->
+<div id="pricing" class=" container mx-auto min-h-screen max-w-6xl bg-pink-300 p-4" style="height: 100vh;">
+ 
+    <h2 class="text-5xl leading-normal max-w-2xl">choose a plan that fits your need</h2>
+
+
+
+
+</div>
+<!-- pricing end -->
+
+
+<!-- FAQ -->
+
+
+ <!-- FAQ -->
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <script type="module" src="/main.js"></script> 
+
+    <!-- <script>
+      const link = document.getElementById('link')
+      function autoslider(numSlides) {
+        
+          "use strict";
+          const carouselBox = document.getElementById('carouselBox');
+          let slide = 0
+          setInterval(() => {
+              if (slide >= carouselBox.scrollWidth) {
+                  slide = 0;
+              } else {
+                  slide += (carouselBox.scrollWidth / numSlides);
+              }
+              carouselBox.scrollLeft = slide;
+          }, 2000);   // 6 sec delay between each slide
+      }
+      autoslider(5);  // if you have 3 images
+
+  </script> -->
+    <!-- <script>
+  
+    
+    </script> -->
+    
+    
+
+
+<script>
+  //  document.addEventListener("DOMContentLoaded", function() {
+  //       link.addEventListener("click", function(event) {
+  //         event.preventDefault(); 
+      
+  //       }}
+
+    function autoslider(numSlides) {
+        "use strict";
+        const carouselBox = document.getElementById('carouselBox');
+        let slide = 0
+        setInterval(() => {
+            if (slide >= carouselBox.scrollWidth) {
+                slide = 0;
+            } else {
+                slide += (carouselBox.scrollWidth / numSlides);
+            }
+            carouselBox.scrollLeft = slide;
+        }, 1000);   // 6 sec delay between each slide
+    }
+    autoslider(5);  // if you have 3 images
+</script>
+   
+    
+
+  </body>
+ </html>
